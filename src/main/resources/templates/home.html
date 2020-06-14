@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Covid Dashboard</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://localhost:8080/site.css">
+    <script src="http://localhost:8080/login.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="container login-form">
+    <h2 class="login-title">- Please Login -</h2>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <form>
+                <div class="input-group login-userinput">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                    <input id="txtUser" type="text" class="form-control" name="username" placeholder="Username">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                    <input  id="txtPassword" type="password" class="form-control" name="password" placeholder="Password">
+                    <span id="showPassword" class="input-group-btn">
+            <button class="btn btn-default reveal" type="button"><i class="glyphicon glyphicon-eye-open"></i></button>
+          </span>
+                </div>
+                <a class="btn btn-primary btn-block login-button" onclick="login()" type="submit"><i class="fa fa-sign-in"></i> Login</a>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
